@@ -63,6 +63,6 @@ app.delete("/items/:id", async (req, res) => {
   res.json({ ok: true });
 });
 
-app.listen(3001, () => {
-  console.log("API running on http://localhost:3001");
+app.listen(3001, "0.0.0.0", () => {
+  console.log("API running on port 3001");
 });
