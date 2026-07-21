@@ -11,6 +11,7 @@ services:
       - "3001:3001"
     environment:
       - NODE_ENV=production
+      - DATABASE_URL=postgresql://admin:1437@postgres:5432/maindb
 
   client:
     build:
